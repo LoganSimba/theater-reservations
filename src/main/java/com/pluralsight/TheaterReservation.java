@@ -9,7 +9,7 @@ public class TheaterReservation {
         //create a scanner
         Scanner scanner = new Scanner(System.in);
 
-        //as the user to enter their name
+        //ask the user to enter their name
         System.out.print("Please enter your name: ");
         String name = scanner.nextLine().trim();
 
@@ -33,6 +33,7 @@ public class TheaterReservation {
         //print the receipt
         System.out.println(desiredTickets + " tickets reserved for " + theaterTickets + " under " + lastName + ", " + firstName);
 
+        scanner.close();
 
     }
 }
