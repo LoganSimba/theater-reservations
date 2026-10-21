@@ -26,12 +26,17 @@ public class TheaterReservation {
         System.out.print("How many tickets would you like? ");
         int desiredTickets = scanner.nextInt();
 
+        String ticketCount =  (desiredTickets == 1) ? "Ticket" : "Tickets";
+
+
         //formatting i
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
         LocalDate theaterTickets = LocalDate.parse(date, formatter);
 
+
+
         //print the receipt
-        System.out.println(desiredTickets + " tickets reserved for " + theaterTickets + " under " + lastName + ", " + firstName);
+        System.out.println(desiredTickets + " " + ticketCount + " reserved for " + theaterTickets + " under " + lastName + ", " + firstName);
 
         scanner.close();
 
